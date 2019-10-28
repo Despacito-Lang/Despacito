@@ -1,0 +1,103 @@
+ay 
+ay Programa de ejemplo de DESPACITO
+ay
+ay Implementacion de BRAINF* en DESPACITO
+ay 
+ay   https://rosettacode.org/wiki/Category:Brainf***
+ay
+
+despacito BrainF
+acuerdate
+    datos conmigo entero(1000)
+    programa conmigo entero(1000)
+    pd conmigo entero ay puntero a los datos
+    pp conmigo entero ay puntero al programa
+    c conmigo entero
+    s conmigo entero
+    x conmigo entero
+    np conmigo entero ay tamano del programa
+    correr conmigo entero
+    valido conmigo entero
+
+bailar
+    firmar ("Cargando programa...\n")
+    correr es 1
+    pp es 0
+
+    mientras correr igual 1
+        c es getchar()
+        valido es 0
+
+        quiero c igual EOF
+            correr es 0
+        sino c igual '>'
+            valido es 1
+        sino c igual '<'
+            valido es 1
+        sino c igual '+'
+            valido es 1
+        sino c igual '-'
+            valido es 1
+        sino c igual '.'
+            valido es 1
+        sino c igual ','
+            valido es 1
+        sino c igual '['
+            valido es 1
+        sino c igual ']'
+            valido es 1
+
+        quiero valido igual 1
+            programa(pp) es c
+            pp es pp mas 1
+
+    np es pp
+    firmar ("Ejecutando programa, n=%d\n", np)
+    correr es 1
+    pp es 0
+    pd es 0
+
+    mientras pp menor np
+        c es programa(pp)
+        ay printf("%d %c\n", pp, c)
+
+        quiero c igual '>'
+            pd es pd mas 1
+        sino c igual '<'
+            pd es pd menos 1
+        sino c igual '+'
+            datos(pd) es datos(pd) mas 1
+        sino c igual '-'
+            datos(pd) es datos(pd) menos 1
+        sino c igual '.'
+            putchar(datos(pd))
+        sino c igual ','
+            datos(pd) es getchar()
+        sino c igual '['
+            quiero datos(pd) igual 0
+                s es 1
+                x es pp mas 1
+                mientras s mayor 0
+                    c es programa(x)
+                    quiero c igual '['
+                        s es s mas 1
+                    sino c igual ']'
+                        s es s menos 1
+                    x es x mas 1
+                pp es x
+        sino c igual ']'
+            quiero datos(pd) igual 0
+                respirar
+            sino
+                s es (1 menos 2)
+                x es pp menos 1
+                mientras s menor 0
+                    c es programa(x)
+                    quiero c igual '['
+                        s es s mas 1
+                    sino c igual ']'
+                        s es s menos 1
+                    x es x menos 1
+                pp es x
+
+        pp es pp mas 1

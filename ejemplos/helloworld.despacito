@@ -1,0 +1,10 @@
+ay 
+ay Programa de ejemplo de DESPACITO
+ay
+ay Implementacion de HOLA MUNDO
+ay
+
+despacito HelloWorld
+bailar
+    pasito 4 mas 2 por 3
+        firmar ("Hello, World!\n")

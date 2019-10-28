@@ -1,0 +1,41 @@
+ay 
+ay Programa de ejemplo de DESPACITO
+ay
+ay Implementacion de FizzBuzz
+ay
+
+despacito Programa1
+
+ay aca besar significa importar una libreria de miradas
+ay besar sistema
+ay suave
+
+mirada nada FizzBuzz y conmigo entero
+acuerdate
+    x conmigo entero
+
+bailar
+    x es 0
+
+    mientras (x menor y)
+        quiero (x mod (3 por 5)) igual 0
+            firmar ("%d: FizzBuzz\n", x)
+        sino (x mod 3) igual 0
+            firmar ("%d: Fizz\n", x)
+        sino (x mod 5) igual 0
+            firmar ("%d: Buzz\n", x)
+        sino
+            firmar ("%d\n", x)
+        x es x mas 1
+
+acuerdate
+    i conmigo entero
+
+bailar
+    ay respirar
+    ay suave
+    ay cosas
+    i es 1
+    pasito 20
+        FizzBuzz (i)
+        i es i mas 1

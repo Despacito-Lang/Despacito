@@ -1,0 +1,17 @@
+ay 
+ay Programa de ejemplo de DESPACITO
+ay
+ay Implementacion de FACTORIAL
+ay
+
+despacito Factorial
+
+mirada entero fact x conmigo entero
+bailar
+    quiero x mayor 1
+        fact es x por fact(x menos 1)
+    sino
+        fact es 1
+
+bailar
+    firmar ("%d\n", fact(6))
